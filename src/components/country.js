@@ -3,14 +3,16 @@ import React from 'react';
 class Country extends React.Component {
   render() {
     return (
-      <tr>
-        <td>
-          { this.props.id }
-        </td>
-        <td>
-          { this.props.name }
-        </td>
-      </tr>
+      <React.Fragment>
+        <div className='country-item'>
+          <p>
+            { this.props.id }
+          </p>
+          <p>
+            { this.props.name }
+          </p>
+        </div>
+      </React.Fragment>
     )
   }
 }

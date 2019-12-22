@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.background-red {
+  background-color: aquamarine;
+}
+
+.country-container {
+  display: flex;
+}
+
+.country-container .country-item{
+  width: 10em;
+}

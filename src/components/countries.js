@@ -21,7 +21,9 @@ const Countries = () => {
 
   return (
     <React.Fragment>
-      {(store.countries || []).map((el) => <Country key={`country_${el.id}`} {...el}></Country>)}
+      <div className='country-container'>
+        {(store.countries || []).map((el) => <Country key={`country_${el.id}`} {...el}></Country>)}
+      </div>
     </React.Fragment>
   )
 }
